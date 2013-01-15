@@ -1,0 +1,55 @@
+#content
+  .wrapper
+    / Used for ajax transition
+    .old
+    / start new container
+    .new
+      / NOTICE: Do NOT edit above. Keep the structure before this part as-is.
+      / ////////////////////////////////////////////////////////
+      / start target container, this part is loaded dynamically!
+      .target.docked
+        .container.subheader
+          %header.row
+            %hgroup
+              %h1.headline
+                %span Pixel Perfect Tree
+        .gap
+        #shell.wide{"data-iscroll" => "true"}
+          #scroller.container
+            .row
+              .works.twelve.columns.phone-four.fourCols
+                %h3 Remodelación Oficinas Pixel Perfect Tree.
+                / Adding gallery images. We use resized thumbnails here for better performance, but it’s not necessary
+                #galleria
+                  %a{:href => "assets/proyectos/PixelPerfectTree00.jpg"}
+                    %img{"data-description" => "Remodelación, PixelPerfectTree"}
+                  %a{:href => "assets/proyectos/PixelPerfectTree01.jpg"}
+                    %img{"data-description" => "”Remodelación, PixelPerfectTree", :src => "assets/proyectos-thumbs/PixelPerfectTree01.jpg"}
+                  %a{:href => "assets/proyectos/PixelPerfectTree02.jpg"}
+                    %img{"data-description" => "Remodelación, PixelPerfectTree", "data-title" => "Araña", :src => "assets/proyectos-thumbs/PixelPerfectTree02.jpg"}
+                  %a{:href => "assets/proyectos/PixelPerfectTree03.jpg"}
+                    %img{"data-title" => "Remodelación, PixelPerfectTree", :src => "assets/proyectos-thumbs/PixelPerfectTree03.jpg"}
+                  %a{:href => "assets/proyectos/PixelPerfectTree04.jpg"}
+                    %img{"data-title" => "Remodelación, PixelPerfectTree", :src => "assets/proyectos-thumbs/PixelPerfectTree04.jpg"}
+                  %a{:href => "assets/proyectos/PixelPerfectTree05.jpg"}
+                    %img{"data-description" => "Remodelación, PixelPerfectTree", "data-title" => "Thermes", :src => "assets/proyectos-thumbs/PixelPerfectTree05.jpg"}
+                  %a{:href => "assets/proyectos/PixelPerfectTree06.jpg"}
+                    %img{"data-description" => "Remodelación, PixelPerfectTree", "data-title" => "Polish Army Kołobrzeg", :src => "assets/proyectos-thumbs/PixelPerfectTree06.jpg"}
+                  %p.cred
+                    Made by
+                    = succeed "." do
+                      %a{:href => "http://galleria.aino.se"} Galleria
+                :javascript
+                  // Load the classic theme
+                  Galleria.loadTheme('assets/galleria.classic.min.js');
+
+                  // Initialize Galleria
+                  Galleria.run('#galleria');
+
+                  
+            .row.copy
+              %p
+                © Todos los derechos reservados, Serv-Ing 2013 -
+                %a{:href => "https://www.facebook.com/pages/Serv-Ing/170998606371283", :target => "_blank"} Conviertete en fan!
+                Powered by
+                %a{:href => "https://www.facebook.com/pixelpt", :target => "_blank"} Pixel Perfect Tree

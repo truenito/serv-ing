@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  location: MyString
+  rooms: 1.5
+  bathrooms: 1.5
+  mts: 1.5
+  price: 1.5
+  description: MyText
+  purpose: MyString
+
+two:
+  title: MyString
+  location: MyString
+  rooms: 1.5
+  bathrooms: 1.5
+  mts: 1.5
+  price: 1.5
+  description: MyText
+  purpose: MyString

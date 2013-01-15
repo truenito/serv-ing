@@ -1,0 +1,66 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  hello: "Hello world"
+
+
+  activerecord:
+    attributes:
+      car:
+        description: "Descripción"
+        make: "Marca"
+        price: "Precio"
+        kilometers: "Kilómetros"
+        variant: "Tipo"
+        featured: "Destacado"
+        model_of_the_week: "Modelo de la semana"
+        offer_zone: "Oferta de la semana"
+        approved: "Estatus de aprobación"
+        images: "Imágenes"
+        year: "Año"
+        province: "Provincia"
+        created_at: "Creado en"
+        updated_at: "Modificado en"
+        cars: "Carros"
+        car: "Carro"
+      make:
+        created_at: "Creado en"
+        updated_at: "Modificado en"
+        cars: "Carros"
+        models: "Modelos"
+      image:
+        created_at: "Creado en"
+        updated_at: "Modificado en"
+        path: "Ubicación"
+        imagetype: "Tipo"
+        car: "Carro"
+        filename: "Nombre de archivo"
+      model:
+        created_at: "Creado en"
+        updated_at: "Modificado en"
+        cars: "Carros"
+        models: "Modelos"
+        make: "Marca"
+        name: "Nombre"
+      province:
+        created_at: "Creado en"
+        updated_at: "Modificado en"
+        name: "Nombre"
+        cars: "Carros"
+      variant:
+        created_at: "Creado en"
+        updated_at: "Modificado en"
+        name: "Nombre"
+        cars: "Carros"
+      user:
+        id: 
+        email: "E-mail" 
+        sign_in_count: "Veces de Ingreso"
+        current_sign_in_at: "Ingresado"
+        last_sign_in_at: "Último ingreso"
+        current_sign_in_ip: "IP de ingreso"
+        last_sign_in_ip: "Último UP de ingreso"
+        created_at: "Creado en"
+        updated_at: "Modificado en"
+        reset_password_sent_at: "Fecha de recuperación de password"

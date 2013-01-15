@@ -1,0 +1,61 @@
+#content
+  .wrapper
+    .old
+    .new
+      .target.docked
+        .container.subheader
+          %header.row
+            %hgroup
+              %h1.headline
+                %span Proyectos
+        .gap
+        #shell.wide{"data-iscroll" => "true"}
+          #scroller.container
+            .row
+              .works.twelve.columns.phone-four.fourCols
+                .proyecto
+                  = link_to(image_tag('portfolio/ppt.jpg'), "proyectos/1", :target => "_self", :class => "fadesito")
+                  %span
+                  %h5 Pixel PT
+                  %p Remodelación de establecimiento.
+                .proyecto
+                  = link_to(image_tag('portfolio/Arpel.jpg'), "proyectos/2", :target => "_self", :class => "fadesito")
+                  %span
+                  %h5 Torre Arpel
+                  %p Remodelación de apartamentos.
+                .proyecto
+                  = link_to(image_tag('portfolio/Coolbar.jpg'), "proyectos/3", :target => "_self", :class => "fadesito")
+                  %span
+                  %h5 Coolbar
+                  %p Remodelación de coolbar.
+                .proyecto
+                  = link_to(image_tag('portfolio/Gsport.jpg'), "proyectos/4", :target => "_self", :class => "fadesito")
+                  %span
+                  %h5 Gsport
+                  %p Remodelación de fachada.
+                .proyecto
+                  = link_to(image_tag('portfolio/CruzMorel.jpg'), "proyectos/5", :target => "_self", :class => "fadesito")
+                  %span
+                  %h5 Cruz Morel
+                  %p Remodelación de recepción.
+                .proyecto
+                  = link_to(image_tag('portfolio/CyM.jpg'), "proyectos/6", :target => "_self", :class => "fadesito")
+                  %span
+                  %h5 C y M
+                  %p Remodelación de suplidores.
+                .proyecto
+                  = link_to(image_tag('portfolio/Escuela.jpg'), "proyectos/7", :target => "_self", :class => "fadesito")
+                  %span
+                  %h5 Escuelas
+                  %p Construcción de escuelas.
+                .proyecto
+                  = link_to(image_tag('portfolio/Almacenes.jpg'), "proyectos/8", :target => "_self", :class => "fadesito")
+                  %span
+                  %h5 Almacen
+                  %p Mantenimiento de almacen.
+            .row.copy
+              %p
+                © Todos los derechos reservados, Serv-Ing 2013 -
+                %a{:href => "https://www.facebook.com/pages/Serv-Ing/170998606371283", :target => "_blank"} Conviertete en fan!
+                Powered by
+                %a{:href => "https://www.facebook.com/pixelpt", :target => "_blank"} Pixel Perfect Tree

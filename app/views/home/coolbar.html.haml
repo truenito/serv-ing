@@ -1,0 +1,58 @@
+#content
+  .wrapper
+    / Used for ajax transition
+    .old
+    / start new container
+    .new
+      / NOTICE: Do NOT edit above. Keep the structure before this part as-is.
+      / ////////////////////////////////////////////////////////
+      / start target container, this part is loaded dynamically!
+      .target.docked
+        .container.subheader
+          %header.row
+            %hgroup
+              %h1.headline
+                %span Remodelación Cool bar
+        .gap
+        #shell.wide{"data-iscroll" => "true"}
+          #scroller.container
+            .row
+              .works.twelve.columns.phone-four.fourCols
+                %h3 Remodelación discoteca Mangú Puerto Plata.
+                / Adding gallery images. We use resized thumbnails here for better performance, but it’s not necessary
+                #galleria
+                  %a{:href => "assets/proyectos/Coolbar00.jpg"}
+                    %img{"data-description" => "Remodelación, Coolbar bar"}
+                  %a{:href => "assets/proyectos/Coolbar01.jpg"}
+                    %img{"data-description" => "”Remodelación, Coolbar bar", :src => "assets/proyectos-thumbs/Coolbar01.jpg"}
+                  %a{:href => "assets/proyectos/Coolbar02.jpg"}
+                    %img{"data-description" => "Remodelación, Coolbar bar", "data-title" => "Araña", :src => "assets/proyectos-thumbs/Coolbar02.jpg"}
+                  %a{:href => "assets/proyectos/Coolbar03.jpg"}
+                    %img{"data-title" => "Remodelación, Coolbar bar", :src => "assets/proyectos-thumbs/Coolbar03.jpg"}
+                  %a{:href => "assets/proyectos/Coolbar04.jpg"}
+                    %img{"data-title" => "Remodelación, Coolbar bar", :src => "assets/proyectos-thumbs/Coolbar04.jpg"}
+                  %a{:href => "assets/proyectos/Coolbar05.jpg"}
+                    %img{"data-description" => "Remodelación, Coolbar bar", "data-title" => "Thermes", :src => "assets/proyectos-thumbs/Coolbar05.jpg"}
+                  %a{:href => "assets/proyectos/Coolbar06.jpg"}
+                    %img{"data-description" => "Remodelación, Coolbar bar", "data-title" => "Polish Army Kołobrzeg", :src => "assets/proyectos-thumbs/Coolbar06.jpg"}
+                  %a{:href => "assets/proyectos/Coolbar07.jpg"}
+                    %img{"data-title" => "Remodelación, Coolbar bar", :src => "assets/proyectos-thumbs/Coolbar07.jpg"}
+                    %img{"data-description" => "Remodelación, Coolbar bar", "data-title" => "09-28-2001 in New York City", :src => "assets/proyectos-thumbs/Coolbar08.jpg"}
+                  %p.cred
+                    Made by
+                    = succeed "." do
+                      %a{:href => "http://galleria.aino.se"} Galleria
+                :javascript
+                  // Load the classic theme
+                  Galleria.loadTheme('assets/galleria.classic.min.js');
+
+                  // Initialize Galleria
+                  Galleria.run('#galleria');
+
+                  
+            .row.copy
+              %p
+                © Todos los derechos reservados, Serv-Ing 2013 -
+                %a{:href => "https://www.facebook.com/pages/Serv-Ing/170998606371283", :target => "_blank"} Conviertete en fan!
+                Powered by
+                %a{:href => "https://www.facebook.com/pixelpt", :target => "_blank"} Pixel Perfect Tree

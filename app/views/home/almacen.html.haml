@@ -1,0 +1,47 @@
+#content
+  .wrapper
+    / Used for ajax transition
+    .old
+    / start new container
+    .new
+      / NOTICE: Do NOT edit above. Keep the structure before this part as-is.
+      / ////////////////////////////////////////////////////////
+      / start target container, this part is loaded dynamically!
+      .target.docked
+        .container.subheader
+          %header.row
+            %hgroup
+              %h1.headline
+                %span Remodelación Almacen
+        .gap
+        #shell.wide{"data-iscroll" => "true"}
+          #scroller.container
+            .row
+              .works.twelve.columns.phone-four.fourCols
+                %h3 Remodelación discoteca Mangú Puerto Plata.
+                / Adding gallery images. We use resized thumbnails here for better performance, but it’s not necessary
+                #galleria
+                  %a{:href => "assets/proyectos/Almacen00-s.jpg"}
+                    %img{"data-description" => "Remodelación de almacen"}
+                  %a{:href => "assets/proyectos/Almacen01-s.jpg"}
+                    %img{"data-description" => "”Remodelación de almacen", :src => "assets/proyectos-thumbs/Almacen01-s.jpg"}
+                  %a{:href => "assets/proyectos/Almacen02-s.jpg"}
+                    %img{"data-description" => "Remodelación de almacen", "data-title" => "Araña", :src => "assets/proyectos-thumbs/Almacen02-s.jpg"}
+                  %a{:href => "assets/proyectos/Almacen03-s.jpg"}
+                    %img{"data-title" => "Remodelación de almacen", :src => "assets/proyectos-thumbs/Almacen03-s.jpg"}
+                  %a{:href => "assets/proyectos/Almacen04-s.jpg"}
+                    %img{"data-title" => "Remodelación de almacen", :src => "assets/proyectos-thumbs/Almacen04-s.jpg"}
+                :javascript
+                  // Load the classic theme
+                  Galleria.loadTheme('assets/galleria.classic.min.js');
+
+                  // Initialize Galleria
+                  Galleria.run('#galleria');
+
+                  
+            .row.copy
+              %p
+                © Todos los derechos reservados, Serv-Ing 2013 -
+                %a{:href => "https://www.facebook.com/pages/Serv-Ing/170998606371283", :target => "_blank"} Conviertete en fan!
+                Powered by
+                %a{:href => "https://www.facebook.com/pixelpt", :target => "_blank"} Pixel Perfect Tree

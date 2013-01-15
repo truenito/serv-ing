@@ -1,0 +1,66 @@
+#content
+  .wrapper
+    .old
+    .new
+      .target.docked.blog
+        .gapProperties
+        #shell.wide{"data-iscroll" => "true"}
+          #scroller.container
+            .row
+              .nine.columns
+                - @property
+                %article.row
+                  .meta.four.columns
+                    %ul.topmargin
+                      %li
+                        %span.tags
+                        %b Ubicación:
+                        = @property.location
+                      %li
+                        %span.comments
+                        %b Tipo:
+                        = @property.purpose
+                      %li
+                        %span.meters
+                        %b Metros:
+                        = @property.normalize_meters
+                      %li
+                        %span.price
+                        %b Precio:
+                        = @property.price
+                      %li
+                        %span.habitaciones
+                        %b Habitaciones:
+                        = @property.rooms
+                      %li
+                        %span.bathrooms
+                        %b Baños:
+                        = @property.bathrooms
+                      %li
+                        %span.parkingspace
+                        %b Parqueos:
+                        = @property.parkingspace
+                  .post.eight.columns.phone-four
+                    .title= @property.title
+                    %p= @property.description
+                    #galleria
+                      - @property.pictures.each_with_index do |picture, index|
+                        = link_to("",@property.pictures[index].path.full_size.url)
+                        = image_tag(@property.pictures[index].path.full_size.url)
+                    :javascript
+                      // Load the classic theme
+                      Galleria.loadTheme('http://localhost:3000/assets/galleria.classic.min.js');
+                      Galleria.configure({
+                      showInfo: 'false',
+                      imageCrop: true
+                      });
+
+                      // Initialize Galleria
+                      Galleria.run('#galleria');
+                    %nice.small.radius.nice.right= link_to(image_tag("properties/Regresar.png"), properties_path, :class => 'pull-right', :target => "_self")
+            .row.copy
+              %p
+                © Todos los derechos reservados, Serv-Ing 2013 -
+                %a{:href => "https://www.facebook.com/pages/Serv-Ing/170998606371283", :target => "_blank"} Conviertete en fan!
+                Powered by
+                %a{:href => "https://www.facebook.com/pixelpt", :target => "_blank"} Pixel Perfect Tree

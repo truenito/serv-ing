@@ -1,0 +1,53 @@
+#fb-root
+:javascript
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=200476363411390";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+#content
+  .wrapper
+    .old
+    .new
+      .target.docked
+        .container.subheader
+          %header.row
+            %hgroup.home
+              %h1.headline
+                %span Calidad y responsabilidad,
+                %h2.headline
+                  %span Somos una empresa líder.
+        #shell.wide.opaque{"data-iscroll" => "true"}
+          #scroller.container
+            .row
+              .nine.columns
+                %h4 Nuevos Proyectos
+                %ul.latest.row
+                  %li.four.columns
+                    %a{:href => "/coolbar"}
+                      %img{:alt => "Coolbar", :src => "assets/home/02.jpg"}/
+                      .overlay
+                        %h5 Coolbar
+                        %p Remodelación de bar lounge.
+                  %li.four.columns
+                    %a{:href => "/pixel", :target => "_self"}
+                      %img{:alt => "Pixel Perfect Tree", :src => "assets/home/01.jpg"}/
+                      .overlay
+                        %h5 Pixel Perfect Tree
+                        %p Remodelación de establecimiento.
+                  %li.four.columns
+                    %a{:href => "cymsupplyparts"}
+                      %img{:alt => "C y M Supply parts", :src => "assets/home/03.jpg"}/
+                      .overlay
+                        %h5 C y M supply parts
+                        %p Construcción de recepción.
+              .three.columns
+                .fb-like-box{"data-header" => "false", "data-height" => "250", "data-href" => "https://www.facebook.com/pages/Serv-Ing/170998606371283?fref=ts", "data-show-faces" => "true", "data-colorscheme" => "dark", "data-border-color" => "black","data-stream" => "true", "data-width" => "250", "border" => "none"}
+            .row.copy
+              %p
+                © Todos los derechos reservados, Serv-Ing 2013 -
+                %a{:href => "https://www.facebook.com/pages/Serv-Ing/170998606371283", :target => "_blank"} Conviertete en fan!
+                Powered by
+                %a{:href => "https://www.facebook.com/pixelpt", :target => "_blank"} Pixel Perfect Tree

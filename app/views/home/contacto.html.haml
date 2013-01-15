@@ -1,0 +1,68 @@
+#content
+  .wrapper
+    .old
+    .new
+      .target.docked.contact{"data-address" => "18.450311,-69.935748", "data-zoom" => "16"}
+        .container.subheader
+          %header.row
+            %hgroup
+              %h1.headline
+                %span Contactanos
+        .gap
+        #shell.wide{"data-iscroll" => "true"}
+          #scroller.container
+            .row
+              .six.columns
+                %h4 Déjanos saber tu opinion
+                .contactForm
+                  // Working on this part ! = form_for(@message) do |f|
+                  .fields
+                    /= f.text_field :nombre, {:placeholder => 'Nombre', :class => 'nombre.input-text'}
+                    %input#nombre.input-text{:autocomplete => "off", :name => "nombre", :placeholder => "Nombre", :required => "", :type => "text"}
+                      %input#email.input-text{:autocomplete => "off", :name => "Email", :placeholder => "Email", :required => "", :type => "email"}
+                  .area
+                    %textarea#mensaje.input-text{:name => "mensaje", :placeholder => "Mensaje", :required => ""}
+                  .row
+                    .seven.phone-four.columns.feedback
+                      .alert-box.success
+                        Yay! The Mensaje was sent. Thank you!
+                        %a.close{:href => "#", :target => "_self"} ×
+                      .alert-box.warning
+                        Hey, fill out the fields correctly!
+                        %a.close{:href => "#"} ×
+                      .alert-box.error
+                        Whoops! It seems like some error occurred!
+                        %a.close{:href => "#", :target => "_self"} ×
+                    .four.phone-four.columns
+                      %input#submit.nice.small.radius.green.button{:type => "button", :value => "Enviar"}
+              .three.columns
+                %h4 Estamos aquí
+                %p
+                  Av. José Contreras #290,
+                  Sector Honduras,
+                  Santo Domingo, Repúblic Dominicana
+              .three.columns
+                %h4 Contactanos
+                %ul.contactInfo
+                  %li
+                    %span.pin
+                    %div
+                      Teléfono (809) 435 9569
+                      %br/
+                      Fax (809) 903 1074
+                      %br/
+                  %li
+                    %span.iphone
+                    %div (809) 902 0074
+                  %li
+                    %span.Email
+                    %div
+                      %a{:href => "mailto:gary@serv-ing.com", :target => "_blank"} gary@serv-ing.com
+                    %div
+                      %a{:href => "mailto:freddy@serv-ing.com", :target => "_blank"} freddy@serv-ing.com
+            .row.copy
+              %p
+                © Todos los derechos reservados, Serv-Ing 2013 -
+                %a{:href => "https://www.facebook.com/pages/Serv-Ing/170998606371283", :target => "_blank"} Conviertete en fan!
+                Powered by
+                %a{:href => "https://www.facebook.com/pixelpt", :target => "_blank"} Pixel Perfect Tree

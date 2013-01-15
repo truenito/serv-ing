@@ -1,0 +1,56 @@
+/ fullscreen background slideshow start
+#bg.background
+  %ul.bg-gallery{"data-delay" => "8"}
+    %li{"data-image" => "assets/slides/01.jpg"}
+      %span
+    %li{"data-image" => "assets/slides/02.jpg"}
+      %span
+/ fullscreen background slideshow end
+/ start main container
+#main{"data-globalscroll" => "false", "data-mobileautofocus" => "true"}
+  / shiny graphics
+  .pattern.hide-on-phones
+  .gradient
+  / start container
+  .container
+    / start header
+    #header.row{"data-fixed" => "false"}
+      .four.columns
+        %h1.logo
+          %a{:href => "index.html"}
+            %img{:src => "#{root_path}assets/logo.png"}/
+        / fake loadbar
+        .bar
+      .eight.columns
+        / start social icons
+        .row
+          %ul.social
+            %li.facebook
+              %a{:href => "https://www.facebook.com/pages/Serv-Ing/170998606371283", :target => "_blank", :title => "facebook"}
+            %li.twitter
+              %a{:href => "https://twitter.com/@serv_ing", :target => "_blank", :title => "twitter"}
+        / end social icons
+        / start navigation
+        %nav.row
+          %ul.nav-bar
+            %li
+              %a.main{:href => "/", :target => "_self"} Inicio
+              / <div class="flyout-toggle"><span></span></div>
+              / ejemplo submenu
+              / <div class="flyout small">
+              / <ul>
+              / <li><a href="reel.html">Showreel</a></li>
+              / </ul>
+              / </div>
+              / end submenu
+            %li= link_to('Proyectos', proyectos_path, { :class => 'main', :target => '_self' })
+            %li
+              %a.main{:href => "soluciones", :target => "_self"} Soluciones
+            %li
+              %a.main{:href => "properties", :target => "_self"} Propiedades
+            %li
+              %a.main{:href => "contacto", :target => "_self"} Contacto
+      / end navigation
+    / header end
+  / container end
+  / start content

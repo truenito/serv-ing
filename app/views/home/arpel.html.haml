@@ -1,0 +1,53 @@
+#content
+  .wrapper
+    / Used for ajax transition
+    .old
+    / start new container
+    .new
+      / NOTICE: Do NOT edit above. Keep the structure before this part as-is.
+      / ////////////////////////////////////////////////////////
+      / start target container, this part is loaded dynamically!
+      .target.docked
+        .container.subheader
+          %header.row
+            %hgroup
+              %h1.headline
+                %span Torre Arpel
+        .gap
+        #shell.wide{"data-iscroll" => "true"}
+          #scroller.container
+            .row
+              .works.twelve.columns.phone-four.fourCols
+                %h3 Remodelación discoteca Mangú Puerto Plata.
+                / Adding gallery images. We use resized thumbnails here for better performance, but it’s not necessary
+                #galleria
+                  %a{:href => "assets/proyectos/Arpel00.jpg"}
+                    %img{"data-description" => "Remodelación, apartamentos Arpel"}
+                  %a{:href => "assets/proyectos/Arpel01.jpg"}
+                    %img{"data-description" => "”Remodelación, apartamentos Arpel", :src => "assets/proyectos-thumbs/Arpel01.jpg"}
+                  %a{:href => "assets/proyectos/Arpel02.jpg"}
+                    %img{"data-description" => "Remodelación, apartamentos Arpel", "data-title" => "Araña", :src => "assets/proyectos-thumbs/Arpel02.jpg"}
+                  %a{:href => "assets/proyectos/Arpel03.jpg"}
+                    %img{"data-title" => "Remodelación, apartamentos Arpel", :src => "assets/proyectos-thumbs/Arpel03.jpg"}
+                  %a{:href => "assets/proyectos/Arpel04.jpg"}
+                    %img{"data-title" => "Remodelación, apartamentos Arpel", :src => "assets/proyectos-thumbs/Arpel04.jpg"}
+                  %a{:href => "assets/proyectos/Arpel05.jpg"}
+                    %img{"data-description" => "Remodelación, apartamentos Arpel", "data-title" => "Thermes", :src => "assets/proyectos-thumbs/Arpel05.jpg"}
+                  %p.cred
+                    Made by
+                    = succeed "." do
+                      %a{:href => "http://galleria.aino.se"} Galleria
+                :javascript
+                  // Load the classic theme
+                  Galleria.loadTheme('assets/galleria.classic.min.js');
+
+                  // Initialize Galleria
+                  Galleria.run('#galleria');
+
+                  
+            .row.copy
+              %p
+                © Todos los derechos reservados, Serv-Ing 2013 -
+                %a{:href => "https://www.facebook.com/pages/Serv-Ing/170998606371283", :target => "_blank"} Conviertete en fan!
+                Powered by
+                %a{:href => "https://www.facebook.com/pixelpt", :target => "_blank"} Pixel Perfect Tree

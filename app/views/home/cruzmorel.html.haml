@@ -1,0 +1,55 @@
+#content
+  .wrapper
+    / Used for ajax transition
+    .old
+    / start new container
+    .new
+      / NOTICE: Do NOT edit above. Keep the structure before this part as-is.
+      / ////////////////////////////////////////////////////////
+      / start target container, this part is loaded dynamically!
+      .target.docked
+        .container.subheader
+          %header.row
+            %hgroup
+              %h1.headline
+                %span Importadora Cruz Morel
+        .gap
+        #shell.wide{"data-iscroll" => "true"}
+          #scroller.container
+            .row
+              .works.twelve.columns.phone-four.fourCols
+                %h3 Remodelación discoteca Mangú Puerto Plata.
+                / Adding gallery images. We use resized thumbnails here for better performance, but it’s not necessary
+                #galleria
+                  %a{:href => "assets/proyectos/Cruz00.jpg"}
+                    %img{"data-description" => "Remodelación, Cruz Morel"}
+                  %a{:href => "assets/proyectos/Cruz01.jpg"}
+                    %img{"data-description" => "”Remodelación, Cruz Morel", :src => "assets/proyectos-thumbs/Cruz01.jpg"}
+                  %a{:href => "assets/proyectos/Cruz02.jpg"}
+                    %img{"data-description" => "Remodelación, Cruz Morel", "data-title" => "Araña", :src => "assets/proyectos-thumbs/Cruz02.jpg"}
+                  %a{:href => "assets/proyectos/Cruz03.jpg"}
+                    %img{"data-title" => "Remodelación, Cruz Morel", :src => "assets/proyectos-thumbs/Cruz03.jpg"}
+                  %a{:href => "assets/proyectos/Cruz04.jpg"}
+                    %img{"data-title" => "Remodelación, Cruz Morel", :src => "assets/proyectos-thumbs/Cruz04.jpg"}
+                  %a{:href => "assets/proyectos/Cruz05.jpg"}
+                    %img{"data-description" => "Remodelación, Cruz Morel", "data-title" => "Thermes", :src => "assets/proyectos-thumbs/Cruz05.jpg"}
+                  %a{:href => "assets/proyectos/Cruz06.jpg"}
+                    %img{"data-description" => "Remodelación, Cruz Morel", "data-title" => "Polish Army Kołobrzeg", :src => "assets/proyectos-thumbs/Cruz06.jpg"}
+                  %p.cred
+                    Made by
+                    = succeed "." do
+                      %a{:href => "http://galleria.aino.se"} Galleria
+                :javascript
+                  // Load the classic theme
+                  Galleria.loadTheme('assets/galleria.classic.min.js');
+
+                  // Initialize Galleria
+                  Galleria.run('#galleria');
+
+                  
+            .row.copy
+              %p
+                © Todos los derechos reservados, Serv-Ing 2013 -
+                %a{:href => "https://www.facebook.com/pages/Serv-Ing/170998606371283", :target => "_blank"} Conviertete en fan!
+                Powered by
+                %a{:href => "https://www.facebook.com/pixelpt", :target => "_blank"} Pixel Perfect Tree

@@ -1,0 +1,53 @@
+#content
+  .wrapper
+    / Used for ajax transition
+    .old
+    / start new container
+    .new
+      / NOTICE: Do NOT edit above. Keep the structure before this part as-is.
+      / ////////////////////////////////////////////////////////
+      / start target container, this part is loaded dynamically!
+      .target.docked
+        .container.subheader
+          %header.row
+            %hgroup
+              %h1.headline
+                %span Remodelación Escuela
+        .gap
+        #shell.wide{"data-iscroll" => "true"}
+          #scroller.container
+            .row
+              .works.twelve.columns.phone-four.fourCols
+                %h3 Remodelación oficinas Pixel Perfect Tree
+                / Adding gallery images. We use resized thumbnails here for better performance, but it’s not necessary
+                #galleria
+                  %a{:href => "assets/proyectos/Escuela00.jpg"}
+                    %img{"data-description" => "Remodelación, Escuela"}
+                  %a{:href => "assets/proyectos/Escuela01.jpg"}
+                    %img{"data-description" => "”Remodelación, Escuela", :src => "assets/proyectos-thumbs/Escuela01.jpg"}
+                  %a{:href => "assets/proyectos/Escuela02.jpg"}
+                    %img{"data-description" => "Remodelación, Escuela", "data-title" => "Araña", :src => "assets/proyectos-thumbs/Escuela02.jpg"}
+                  %a{:href => "assets/proyectos/Escuela03.jpg"}
+                    %img{"data-title" => "Remodelación, Escuela", :src => "assets/proyectos-thumbs/Escuela03.jpg"}
+                  %a{:href => "assets/proyectos/Escuela04.jpg"}
+                    %img{"data-title" => "Remodelación, Escuela", :src => "assets/proyectos-thumbs/Escuela04.jpg"}
+                  %a{:href => "assets/proyectos/Escuela05.jpg"}
+                    %img{"data-description" => "Remodelación, Escuela", "data-title" => "Thermes", :src => "assets/proyectos-thumbs/Escuela05.jpg"}
+                  %p.cred
+                    Made by
+                    = succeed "." do
+                      %a{:href => "http://galleria.aino.se"} Galleria
+                :javascript
+                  // Load the classic theme
+                  Galleria.loadTheme('assets/galleria.classic.min.js');
+
+                  // Initialize Galleria
+                  Galleria.run('#galleria');
+
+                  
+            .row.copy
+              %p
+                © Todos los derechos reservados, Serv-Ing 2013 -
+                %a{:href => "https://www.facebook.com/pages/Serv-Ing/170998606371283", :target => "_blank"} Conviertete en fan!
+                Powered by
+                %a{:href => "https://www.facebook.com/pixelpt", :target => "_blank"} Pixel Perfect Tree

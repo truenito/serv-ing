@@ -1,0 +1,109 @@
+#content
+  .wrapper
+    / Used for ajax transition
+    .old
+    / start new container
+    .new
+      / NOTICE: Do NOT edit above. Keep the structure before this part as-is.
+      / ////////////////////////////////////////////////////////
+      / start target container, this part is loaded dynamically!
+      .target.docked
+        .container.subheader
+          %header.row
+            %hgroup
+              %h1.headline
+                %span Proyectos X
+        .gap
+        #shell.wide{"data-iscroll" => "true"}
+          #scroller.container
+            .row
+              %dl#filters.sub-nav
+                / <dt>Filter:</dt>
+                %dd.active
+                  %a{"data-filter" => "*", :href => "#"} Todos
+                %dd
+                  %a{"data-filter" => ".remodelaciones", :href => "#"} Remodelaciones
+                %dd
+                  %a{"data-filter" => ".construcciones", :href => "#"} Construcciones
+                %dd
+                  %a{"data-filter" => ".mantenimientos", :href => "#"} Matenimientos
+            .row
+              .works.twelve.columns.phone-four.fourCols
+                .item.remodelaciones.mantenimientos
+                  %a{:href => "project.html"}
+                    %img{:alt => "description", :src => "assets/works/01.jpg"}/
+                    %span
+                  %h5 Mantenimiento1
+                  %p mantenimientos, remodelaciones
+                .item.closeup.construcciones.mantenimientos
+                  %a{:href => "project.html"}
+                    %img{:alt => "description", :src => "assets/works/02.jpg"}/
+                    %span
+                  %h5 Construccion1
+                  %p Closeup, construcciones, mantenimientos
+                .item.remodelaciones.identity
+                  %a{:href => "project.html"}
+                    %img{:alt => "description", :src => "assets/works/03.jpg"}/
+                    %span
+                  %h5 Remodelaciones
+                  %p remodelaciones, Identity
+                .item.dark.remodelaciones
+                  %a{:href => "project.html"}
+                    %img{:alt => "description", :src => "assets/works/04.jpg"}/
+                    %span
+                  %h5 Remodelaciones
+                  %p Dark, remodelaciones
+                .item.mantenimientos.remodelaciones
+                  %a{:href => "project.html"}
+                    %img{:alt => "description", :src => "assets/works/05.jpg"}/
+                    %span
+                  %h5 Mantenimiento
+                  %p mantenimientos, Closeup
+                .item.mantenimientos.dark
+                  %a{:href => "project.html"}
+                    %img{:alt => "description", :src => "assets/works/06.jpg"}/
+                    %span
+                  %h5 Mantenimiento
+                  %p mantenimientos, Dark
+                .item.remodelaciones.construcciones.identity
+                  %a{:href => "project.html"}
+                    %img{:alt => "description", :src => "assets/works/07.jpg"}/
+                    %span
+                  %h5 Remodelaciones
+                  %p remodelaciones, construcciones, mantenimientos
+                .item.dark.remodelaciones
+                  %a{:href => "project.html"}
+                    %img{:alt => "description", :src => "assets/works/08.jpg"}/
+                    %span
+                  %h5 Remodelacion
+                  %p Dark, remodelaciones
+                .item.remodelaciones.construcciones
+                  %a{:href => "project.html"}
+                    %img{:alt => "description", :src => "assets/works/09.jpg"}/
+                    %span
+                  %h5 Remodelacion
+                  %p remodelaciones, construcciones
+                .item.mantenimientos.identity
+                  %a{:href => "project.html"}
+                    %img{:alt => "description", :src => "assets/works/10.jpg"}/
+                    %span
+                  %h5 Mantenimiento
+                  %p mantenimientos, Identity
+                .item.dark.construcciones
+                  %a{:href => "project.html"}
+                    %img{:alt => "description", :src => "assets/works/11.jpg"}/
+                    %span
+                  %h5 Construccion
+                  %p Dark, construcciones
+                .item.dark.identity
+                  %a{:href => "project.html"}
+                    %img{:alt => "description", :src => "assets/works/12.jpg"}/
+                    %span
+                  %h5 Ni se que es
+                  %p Dark, Identity
+            .row.copy
+              %p
+                © Todos los derechos reservados, Serv-Ing 2013 -
+                %a{:href => "https://www.facebook.com/pages/Serv-Ing/170998606371283", :target => "_blank"} Conviertete en fan!
+                Powered by
+                %a{:href => "https://www.facebook.com/pixelpt", :target => "_blank"} Pixel Perfect Tree
